@@ -6,8 +6,12 @@ body, html {
 .container {
   text-align: center;
   height: 100%;
+  gap: 15px;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(450px, 3fr);
+  grid-template-rows: minmax(50px, 1fr) minmax(50px, 1fr) minmax(250px, 5fr) minmax(50px, 1fr);
 }
 
 .container div {
@@ -31,10 +35,12 @@ body, html {
 
 .nav {
   background-color: #00DDFF;
+  grid-row: 2/3;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column: 2/3;
 }
 
 .article p {
